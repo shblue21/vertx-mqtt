@@ -325,7 +325,8 @@ public class MqttClientOptions extends NetClientOptions {
    * Gets the time in seconds after which the client stops waiting for a PUBACK, PUBREC
    * or PUBCOMP packet from the server in response to a packet it has sent.
    * <p>
-   * The default value of this property is 10s.
+   * The default value of this property is -1 which indicates that the client should wait
+   * an unlimited time for the server's acknowledgement.
    *
    * @return timeout in seconds
    */
